@@ -1,3 +1,4 @@
+@import "Variables";
 h3, h5{
     font-family: $primary-font;
     display: inline;
@@ -21,4 +22,21 @@ h5{
     border: 0;
     background-color:$primary-color ;
     border-radius: 30px;
+}
+ul{
+    display: inline;
+    list-style-type: none;
+}
+.definition{
+    display: flex;
+}
+.definitions-list{
+    display: list-item;
+}
+.example{
+    display: flex;
+    font-family: $primary-font;
+    font-style: italic;
+    font-size: 16px;
+    opacity: 90%;
 }

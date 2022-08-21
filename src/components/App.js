@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import Dictionary from "./Dictionary";
+import Footer from "./Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/App.css";
 
@@ -57,6 +58,7 @@ function App() {
         </form>
         {loaded && <Dictionary wordData={wordData} />}
       </div>
+      <Footer />
     </div>
   );
 }
