@@ -16,7 +16,7 @@ export default function Dictionary(props) {
     play(listenWord);
   }
   useEffect(() => {
-    if (word.phonetics[0] && word.phonetics[0].audio != "") {
+    if (word.phonetics[0] && word.phonetics[0].audio !== "") {
       fetch(word.phonetics[0].audio)
         .then((response) => response.arrayBuffer())
         .then((arrayBuffer) => context.decodeAudioData(arrayBuffer))
@@ -30,7 +30,7 @@ export default function Dictionary(props) {
       <div className="col-6">
         <h3>{word.word}</h3>
         {word.phonetic && <h5>{word.phonetic}</h5>}
-        {word.phonetics[0] && word.phonetics[0].audio != "" && (
+        {word.phonetics[0] && word.phonetics[0].audio !== "" && (
           <div className="listen-wrap">
             <button className="btn-custom mt-2" onClick={handleListenButton}>
               Listen

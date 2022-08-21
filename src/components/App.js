@@ -34,7 +34,7 @@ function App() {
   }, [keyword]);
   useEffect(() => {
     setTimeout(() => {
-      if (wordData != null) {
+      if (wordData !== null) {
         setLoaded(true);
         console.log(wordData);
       }
