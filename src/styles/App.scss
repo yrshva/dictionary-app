@@ -1,20 +1,13 @@
-@import url('https://rsms.me/inter/inter.css');
-
-$bg-color: #ECF8F8;
-$primary-font:'Inter', sans-serif;
-$primary-color: #BEDBDB;
+@import "Variables";
+@import "Dictionary";
 
 .App{
     background-color: $bg-color;
     width: 100%;
-    height: 100vh;
 }
 .wrap{
     padding: 10px;
     background-color: white;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
 }
 h2{
     text-align: center;
@@ -25,12 +18,6 @@ h2{
     border: 3px solid $primary-color;
     outline: none;    
     box-shadow: 3px 2px 4px rgba(0, 0, 0, 0.25);;
+    margin: 0 20px 0 20px;
 }
-h3, h5{
-    font-family: $primary-font;
-    display: inline;
-}
-h5{
-    margin-left: 20px;
-    font-weight: 400;
-}
+

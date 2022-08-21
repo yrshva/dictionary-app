@@ -1,16 +1,41 @@
 @import url("https://rsms.me/inter/inter.css");
+h3, h5 {
+  font-family: "Inter", sans-serif;
+  display: inline;
+}
+
+h3 {
+  text-transform: capitalize;
+}
+
+h5 {
+  margin-left: 20px;
+  font-weight: 400;
+}
+
+.listen-wrap {
+  display: block;
+}
+
+.btn-custom {
+  text-align: center;
+  padding: 8px 25px;
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  font-style: italic;
+  border: 0;
+  background-color: #BEDBDB;
+  border-radius: 30px;
+}
+
 .App {
   background-color: #ECF8F8;
   width: 100%;
-  height: 100vh;
 }
 
 .wrap {
   padding: 10px;
   background-color: white;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 h2 {
@@ -23,14 +48,5 @@ h2 {
   border: 3px solid #BEDBDB;
   outline: none;
   box-shadow: 3px 2px 4px rgba(0, 0, 0, 0.25);
-}
-
-h3, h5 {
-  font-family: "Inter", sans-serif;
-  display: inline;
-}
-
-h5 {
-  margin-left: 20px;
-  font-weight: 400;
+  margin: 0 20px 0 20px;
 }/*# sourceMappingURL=App.css.map */
