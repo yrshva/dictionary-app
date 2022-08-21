@@ -1,9 +1,11 @@
+import Images from "./Images";
 import { useEffect } from "react";
 import soundwaves from "../img/sound-waves.svg";
 
 export default function Dictionary(props) {
   const word = props.wordData;
   const context = new AudioContext();
+
   let listenWord;
   function play(audioBuffer) {
     const source = context.createBufferSource();
@@ -26,8 +28,8 @@ export default function Dictionary(props) {
     }
   }, [word]);
   return (
-    <div className="row mt-2">
-      <div className="col-6">
+    <div className="row mt-3">
+      <div className="col-12 col-md-6">
         <h3>{word.word}</h3>
         {word.phonetic && <h5>{word.phonetic}</h5>}
         {word.phonetics[0] && word.phonetics[0].audio !== "" && (
@@ -72,6 +74,9 @@ export default function Dictionary(props) {
             </div>
           )}
         </div>
+      </div>
+      <div className="col-12 col-md-6">
+        <Images word={word.word} />
       </div>
     </div>
   );

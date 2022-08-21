@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import Dictionary from "./Dictionary";
-import Footer from "./Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/App.css";
 
@@ -21,6 +20,7 @@ function App() {
 
   function handleInputChange(event) {
     event.preventDefault();
+    setLoaded(false);
     setInput(event.target.value);
   }
 
@@ -56,9 +56,12 @@ function App() {
             onChange={handleInputChange}
           />
         </form>
-        {loaded && <Dictionary wordData={wordData} />}
+        {loaded ? (
+          <Dictionary wordData={wordData} />
+        ) : (
+          <p className="ms-2 mt-2 loading">Please enter the word</p>
+        )}
       </div>
-      <Footer />
     </div>
   );
 }
