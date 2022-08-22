@@ -4,15 +4,17 @@
     position: relative;
   top: 50%;
   transform: translateY(-50%);
-  
   .pic{
     border: 5px solid $primary-color;
     border-radius: 40px;
     margin: 30px 0;
+    box-shadow: 3px 2px 4px rgba(0, 0, 0, 0.25);;
+
   }
   @media screen and (max-width: $medium){
     display: flex;
     justify-content: center;
+    flex-flow: row wrap;
     .pic{
         width: 230px;
         margin: 0 2%;
