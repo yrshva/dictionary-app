@@ -1,13 +1,17 @@
 @import "Variables";
-@import "Dictionary";
 
 .App{
     background-color: $bg-color;
     width: 100%;
+    min-height: 100vh;
+    padding: 30px 10px 60px 10px;
 }
 .wrap{
-    padding: 10px;
+    padding: 20px;
     background-color: white;
+    position: relative;
+    min-height: 90vh;
+    max-width: 900px;
 }
 h2{
     text-align: center;
@@ -20,4 +24,7 @@ h2{
     box-shadow: 3px 2px 4px rgba(0, 0, 0, 0.25);;
     margin: 0 20px 0 20px;
 }
-
+.loading{
+    opacity: 70%;
+    font-family: $primary-font;
+}

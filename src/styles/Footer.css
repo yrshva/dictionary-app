@@ -1,0 +1,21 @@
+@import url("https://rsms.me/inter/inter.css");
+footer {
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 -1px 5px #BEDBDB;
+  background-color: #ECF8F8;
+  height: 30px;
+  text-align: center;
+}
+footer a {
+  color: black;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+}
+footer a :hover {
+  color: grey;
+}
+footer a :visited {
+  color: rgb(219, 92, 219);
+}/*# sourceMappingURL=Footer.css.map */

@@ -1,0 +1,50 @@
+@import url("https://rsms.me/inter/inter.css");
+h3, h5 {
+  font-family: "Inter", sans-serif;
+  display: inline;
+}
+
+h3 {
+  text-transform: capitalize;
+}
+
+h5 {
+  margin-left: 20px;
+  font-weight: 400;
+}
+
+.listen-wrap {
+  display: block;
+}
+
+.btn-custom {
+  text-align: center;
+  padding: 8px 25px;
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  font-style: italic;
+  border: 0;
+  background-color: #BEDBDB;
+  border-radius: 30px;
+}
+
+ul {
+  display: inline;
+  list-style-type: none;
+}
+
+.definition {
+  display: flex;
+}
+
+.definitions-list {
+  display: list-item;
+}
+
+.example {
+  display: flex;
+  font-family: "Inter", sans-serif;
+  font-style: italic;
+  font-size: 16px;
+  opacity: 90%;
+}/*# sourceMappingURL=Dictionary.css.map */
