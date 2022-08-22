@@ -1,0 +1,26 @@
+@import "Variables";
+
+.pictures{
+    position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  
+  .pic{
+    border: 5px solid $primary-color;
+    border-radius: 40px;
+    margin: 30px 0;
+  }
+  @media screen and (max-width: $medium){
+    display: flex;
+    justify-content: center;
+    .pic{
+        width: 230px;
+        margin: 0 2%;
+    }
+  }
+}
+.no-pic{
+    text-align: center;
+    font-family: $primary-font;
+    opacity: 80%;
+}

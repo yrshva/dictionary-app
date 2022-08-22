@@ -1,0 +1,27 @@
+@import url("https://rsms.me/inter/inter.css");
+.pictures {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.pictures .pic {
+  border: 5px solid #BEDBDB;
+  border-radius: 40px;
+  margin: 30px 0;
+}
+@media screen and (max-width: 992px) {
+  .pictures {
+    display: flex;
+    justify-content: center;
+  }
+  .pictures .pic {
+    width: 230px;
+    margin: 0 2%;
+  }
+}
+
+.no-pic {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  opacity: 80%;
+}/*# sourceMappingURL=Pictures.css.map */

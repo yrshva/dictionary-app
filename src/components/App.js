@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import Dictionary from "./Dictionary";
+import Pictures from "./Pictures";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/App.css";
 
@@ -23,7 +24,6 @@ function App() {
     setLoaded(false);
     setInput(event.target.value);
   }
-
   useEffect(() => {
     if (keyword !== null) {
       const apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
@@ -37,7 +37,6 @@ function App() {
     setTimeout(() => {
       if (wordData !== null) {
         setLoaded(true);
-        console.log(wordData);
       }
     }, 500);
   }, [wordData]);
@@ -56,8 +55,12 @@ function App() {
             onChange={handleInputChange}
           />
         </form>
+
         {loaded ? (
-          <Dictionary wordData={wordData} />
+          <div className="row mt-3">
+            <Dictionary wordData={wordData} />
+            <Pictures word={wordData.word} />
+          </div>
         ) : (
           <p className="ms-2 mt-2 loading">Please enter the word</p>
         )}
