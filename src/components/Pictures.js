@@ -7,6 +7,7 @@ export default function Pictures(props) {
   const [pictures, setPictures] = useState(null);
   function showPictures(response) {
     setPictures(response.data.photos);
+    console.log("made api req");
   }
 
   useEffect(() => {
@@ -20,7 +21,7 @@ export default function Pictures(props) {
       .catch((error) => {
         console.error("error while loading pictures");
       });
-  }, [props]);
+  }, [props.word]);
 
   if (pictures) {
     return (
@@ -37,5 +38,5 @@ export default function Pictures(props) {
         </div>
       </div>
     );
-  } else return <p className="no-pic">No pictures to be displayed</p>;
+  } else return null;
 }
