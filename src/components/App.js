@@ -10,6 +10,7 @@ function App() {
 
   function handleSubmit(event) {
     event.preventDefault();
+    setInput("");
     setKeyword(input);
   }
   function handleInputChange(event) {
@@ -28,6 +29,7 @@ function App() {
             type="text"
             placeholder="Start typing.."
             className="col input"
+            value={input}
             onChange={handleInputChange}
           />
         </form>
