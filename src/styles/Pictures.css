@@ -1,9 +1,4 @@
 @import url("https://rsms.me/inter/inter.css");
-.pictures {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-}
 .pictures .pic {
   border: 5px solid #BEDBDB;
   border-radius: 40px;

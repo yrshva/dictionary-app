@@ -1,9 +1,7 @@
 @import "Variables";
 
 .pictures{
-    position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+
   .pic{
     border: 5px solid $primary-color;
     border-radius: 40px;

@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Dictionary from "./Dictionary";
 import Pictures from "./Pictures";
 import "bootstrap/dist/css/bootstrap.min.css";

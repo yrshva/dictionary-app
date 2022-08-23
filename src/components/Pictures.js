@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import "../styles/Pictures.css";
 
 export default function Pictures(props) {
-  const pexelsApisUrl = `https://api.pexels.com/v1/search?query=${props.word}&per_page=2`;
   const [pictures, setPictures] = useState(null);
   function showPictures(response) {
     setPictures(response.data.photos);
@@ -11,6 +10,7 @@ export default function Pictures(props) {
   }
 
   useEffect(() => {
+    const pexelsApisUrl = `https://api.pexels.com/v1/search?query=${props.word}&per_page=3`;
     axios
       .get(pexelsApisUrl, {
         headers: {
